@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "firstname": "David",
+        "lastname": "Maghradze",
+        "address": "Rustavi, Shartava's 8",
+        "email": "davidmaghradze07@gmail.com",
+        "age": 20,
+        "position": "React Front End Developer",
+        "createDate": "23/04/2019 22:11:32"
+    },
+
+    {
+        "id": 2,
+        "firstname": "Beqa",
+        "lastname": "Lazarashvili",
+        "address": "Tbilisi, Tsereteli's avenue, 108",
+        "email": "beqalazarashvili@gmail.com",
+        "age": 21,
+        "position": "Vue Front End Developer",
+        "createDate": "23/04/2019 22:11:32"
+    },
+
+    {
+        "id": 3,
+        "firstname": "Luka",
+        "lastname": "Berukashvili",
+        "address": "Barcelona, Messi's 81",
+        "email": "lukaberuka@gmail.com",
+        "age": 24,
+        "position": "Web Designer",
+        "createDate": "23/04/2019 22:11:32"
+    }
+]
