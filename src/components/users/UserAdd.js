@@ -146,13 +146,18 @@ class UserAdd extends React.Component {
         }
 
         if(errors.length===0) {
+            // set Date
             const date = new Date();
             const frmt = 'DD/MM/YYYY HH:mm:ss';
             const createDate = moment.utc(date, frmt).local().format(frmt);
+
+            // generate new Id 
             const newId = this.context.users.length + 1;
+
             values.id = newId;
             values.createDate = createDate;
             addUser(values);
+            
             for( let value in updatedFormData ) {
                 const updatedElement = updatedFormData[value];
                 updatedElement.touched = false;

@@ -3,10 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import '../global.css';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
 import data from '../data.json';
 import Header from './header/header';
 import Users from './users';
@@ -21,7 +17,7 @@ class App extends React.Component {
     }
     
     deleteUser = userId => {
-        const users = this.state.users.filter(user=> user.id!==userId);
+        const users = this.state.users.filter(user => user.id!==userId);
         this.setState({ users })
     }
 

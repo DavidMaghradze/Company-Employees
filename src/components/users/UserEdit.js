@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import Button from '@material-ui/core/Button';
 import TextInput from '../common/TextInput/TextInput';
 import { UsersContext } from '../../context/UserContext'; 
@@ -177,9 +178,13 @@ class UserEdit extends React.Component {
             for (let item in updatedFormData) {
                 dataToSubmit[item] = updatedFormData[item].value;
                 dataToSubmit.id = this.props.match.params.id;
+                const date = new Date();
+                const frmt = 'DD/MM/YYYY HH:mm:ss';
+                const createDate = moment.utc(date, frmt).local().format(frmt);
+                dataToSubmit.createDate = createDate;
+                dataToSubmit.isEdited = true;
             }
 
-            console.log(dataToSubmit);
             editUser(dataToSubmit);
             this.props.history.push('');
         }
