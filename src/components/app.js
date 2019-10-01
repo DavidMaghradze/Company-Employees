@@ -8,7 +8,7 @@ import Header from './header/header';
 import Users from './users';
 import UserAdd from './users/UserAdd';
 import UserEdit from './users/UserEdit';
-import { UsersContext } from '../context/UserContext';
+import { UsersContext } from './context/UserContext';
 
 class App extends React.Component {
 

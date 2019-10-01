@@ -7,7 +7,7 @@ import Avatar from '@material-ui/core/Avatar';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions'
 import Button from '@material-ui/core/Button';
-import { UsersContext } from '../../context/UserContext';
+import { UsersContext } from '../context/UserContext';
 import Modal from '../portals/modal';
 
 const Users = ({ users }) => {

@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import Button from '@material-ui/core/Button';
 import TextInput from '../common/TextInput/TextInput';
-import { UsersContext } from '../../context/UserContext'; 
+import { UsersContext } from '../context/UserContext'; 
 import validate from '../helpers/validate';
  
 class UserEdit extends React.Component {
